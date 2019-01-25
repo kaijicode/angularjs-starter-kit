@@ -1,4 +1,11 @@
-import appModule from './app.module';
+import './app.module';
+import './routes';
 
-import routes from './routes';
-import app from './app';
+// pages
+import './pages/home/home';
+import './pages/userDetail/userDetail';
+import './pages/userList/userList';
+
+
+// services
+import './services/user';

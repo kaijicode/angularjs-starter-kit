@@ -1,5 +1,5 @@
 import angular from "angular";
-import uirouter from 'angular-ui-router';
+import 'angular-ui-router';
 
 
 angular.module('myApp', [
