@@ -10,6 +10,9 @@ module.exports = {
       path: path.resolve(__dirname, 'public'),
       filename: 'app.bundle.js'
    },
+   devServer: {
+      contentBase: './public'
+   },
    plugins: [
       new HtmlWebpackPlugin({template: './src/index.html'}),
       new MiniCssExtractPlugin({
