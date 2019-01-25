@@ -1,0 +1,9 @@
+☐ remove `#!` hashbang
+☐ support Sass
+☐ cache templates that are specified in templateUrl (app.component({templateUrl: 'some-template.html'})
+☐ add dev web server
+☐ re-build project on save
+☐ use Babel
+☐ add js linter
+☐ make script to build development build
+☐ make script to build production build
