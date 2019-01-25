@@ -1,5 +1,6 @@
 import angular from 'angular';
 import template from './userList.html';
+import './userList.sass';
 
 
 angular

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = {
@@ -10,7 +11,10 @@ module.exports = {
       filename: 'app.bundle.js'
    },
    plugins: [
-      new HtmlWebpackPlugin({template: './src/index.html'})
+      new HtmlWebpackPlugin({template: './src/index.html'}),
+      new MiniCssExtractPlugin({
+         filename: '[chunkhash].css'
+      })
    ],
    module: {
       rules: [
@@ -23,6 +27,14 @@ module.exports = {
          {
             test: /\.html$/,
             loader: 'raw-loader'
+         },
+         {
+            test: /\.sass$/,
+            use: [
+               MiniCssExtractPlugin.loader,
+               'css-loader',
+               'sass-loader'
+            ]
          }
       ]
    }

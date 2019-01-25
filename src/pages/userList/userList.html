@@ -1,6 +1,6 @@
 <div>
     <h1>User List</h1>
-    <div ng-repeat="user in userList.users">
-        <a href ui-sref="user-detail({userId: user.id})">user: {{user.id}}</a>
+    <div class="user-list" ng-repeat="user in userList.users">
+        <a class="user-list__user" href ui-sref="user-detail({userId: user.id})">user: {{user.id}}</a>
     </div>
 </div>
