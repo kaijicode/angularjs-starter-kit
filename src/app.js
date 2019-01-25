@@ -1,4 +1,9 @@
 'use strict';
+import angular from 'angular';
+import uirouter from 'angular-ui-router';
+
+import angularLogo from './logo-angularjs.png';
+
 
 const app = angular.module('myApp', [
    'ui.router'
@@ -24,7 +29,19 @@ app.config(function ($stateProvider) {
 });
 
 app.component('home', {
-   template: 'Home'
+   template: '' +
+      '        <img src="{{home.angularLogoUrl}}"/>' +
+      '        <ul>' +
+      '            <li>' +
+      '                <a href="" ui-sref="user-list">/users</a>' +
+      '            </li>' +
+      '        </ul>',
+   controllerAs: 'home',
+   controller: function() {
+      const vm = this;
+
+      vm.angularLogoUrl = angularLogo;
+   }
 });
 
 app.component('userDetail', {
