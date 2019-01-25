@@ -14,7 +14,10 @@ module.exports = {
       contentBase: './public'
    },
    plugins: [
-      new HtmlWebpackPlugin({template: './src/index.html'}),
+      new HtmlWebpackPlugin({
+         template: './src/index.html',
+         favicon: './public/favicon.ico'
+      }),
       new MiniCssExtractPlugin({
          filename: '[chunkhash].css'
       })
