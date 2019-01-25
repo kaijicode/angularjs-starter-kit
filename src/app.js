@@ -1,34 +1,11 @@
 'use strict';
 import angular from 'angular';
-import uirouter from 'angular-ui-router';
-
-import angularLogo from './logo-angularjs.png';
+import angularLogo from "./logo-angularjs.png";
 
 
-const app = angular.module('myApp', [
-   'ui.router'
-]);
-
-app.config(function ($stateProvider) {
-   $stateProvider
-      .state({
-         url: '',
-         name: 'home',
-         component: 'home'
-      })
-      .state({
-         url: '/users',
-         name: 'user-list',
-         component: 'userList'
-      })
-      .state({
-         url: '/users/{userId}',
-         name: 'user-detail',
-         component: 'userDetail'
-      });
-});
-
-app.component('home', {
+angular
+.module('myApp')
+.component('home', {
    template: '' +
       '        <img src="{{home.angularLogoUrl}}"/>' +
       '        <ul>' +
@@ -44,7 +21,10 @@ app.component('home', {
    }
 });
 
-app.component('userDetail', {
+
+angular
+.module('myApp')
+.component('userDetail', {
    template: '' +
       '<div>' +
       '<h1>User {{userDetail.id}}</h1>' +
@@ -58,7 +38,9 @@ app.component('userDetail', {
    }
 });
 
-app.component('userList', {
+angular
+.module('myApp')
+.component('userList', {
    template: '' +
       '<div>' +
       '<h1>User List</h1>' +
@@ -79,7 +61,9 @@ app.component('userList', {
    }
 });
 
-app.factory('user', function () {
+angular
+.module('myApp')
+.factory('user', function () {
    const users = [
       {id: 1, name: 'Alice'},
       {id: 2, name: 'Bob'}
