@@ -11,7 +11,8 @@ module.exports = {
       filename: 'app.bundle.js'
    },
    devServer: {
-      contentBase: './public'
+      contentBase: './public',
+      historyApiFallback: true
    },
    plugins: [
       new HtmlWebpackPlugin({
