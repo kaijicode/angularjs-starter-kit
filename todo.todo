@@ -1,9 +1,24 @@
-☐ remove `#!` hashbang
-☐ support Sass
-☐ cache templates that are specified in templateUrl (app.component({templateUrl: 'some-template.html'})
-☐ add dev web server
-☐ re-build project on save
+✔ remove `#!` hashbang @done (2019-1-25 21:06:50)
+✔ support Sass @done (2019-1-25 21:06:51)
+✔ cache templates that are specified in templateUrl (app.component({templateUrl: 'some-template.html'}) @done (2019-1-25 21:06:53)
+✔ add dev web server @done (2019-1-25 21:06:54)
+✔ re-build project on save @done (2019-1-25 21:06:56)
 ☐ use Babel
 ☐ add js linter
-☐ make script to build development build
-☐ make script to build production build
+☐ make development build
+☐ make production build
+    ☐ create webpack.production.config.js
+    ☐ separate vendor (*.js, *.css) from source code
+    ☐ application bundle (*.js and *.css) should contain hash of the file
+    ☐ uglifying
+    ☐ minification
+    ☐ find solution for broken dependency injection after minification/uglifying
+    ☐ test production build
+☐ create deployment script
+☐ add angular-resource as project dependency
+    ☐ add example on how to use it
+☐ improve HTML boilerplate (add <meta> tags such as "viewport", "description")
+☐ setup test environment (Jasmine & Karma)
+    ☐ add example unit test
+☐ setup e2e test environment with protractor
+☐ add browsersync
