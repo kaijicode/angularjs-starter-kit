@@ -4,15 +4,15 @@
 ✔ add dev web server @done (2019-1-25 21:06:54)
 ✔ re-build project on save @done (2019-1-25 21:06:56)
 ☐ use Babel
-☐ add js linter
+✔ add js linter @done (2019-1-26 11:15:22)
 ☐ make development build
 ☐ make production build
     ☐ create webpack.production.config.js
     ☐ separate vendor (*.js, *.css) from source code
-    ☐ application bundle (*.js and *.css) should contain hash of the file
+    ✔ application bundle (*.js and *.css) should contain hash of the file @done (2019-1-26 11:16:38)
     ☐ uglifying
-    ☐ minification
-    ☐ find solution for broken dependency injection after minification/uglifying
+    ✔ minification @done (2019-1-26 11:16:40)
+    ✔ find solution for broken dependency injection after minification/uglifying @done (2019-1-26 11:16:42)
     ☐ test production build
 ☐ create deployment script
 ☐ add angular-resource as project dependency
