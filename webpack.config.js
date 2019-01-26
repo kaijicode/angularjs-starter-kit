@@ -9,7 +9,19 @@ module.exports = {
    entry: './src/index.js',
    output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'app.[contenthash].js'
+      filename: 'app.[contenthash].js',
+      chunkFilename: 'lib.[contenthash].js'
+   },
+   optimization: {
+      splitChunks: {
+         cacheGroups: {
+            commons: {
+               test: /[\\/]node_modules[\\/]/,
+               chunks: 'all',
+               enforce: true
+            }
+         }
+      }
    },
    devServer: {
       contentBase: './dist',
@@ -22,7 +34,8 @@ module.exports = {
          favicon: './static/favicon.ico'
       }),
       new MiniCssExtractPlugin({
-         filename: 'app.[contenthash].css'
+         filename: 'app.[contenthash].css',
+         chunkFilename: "lib.[contenthash].css"
       })
    ],
    module: {
@@ -48,7 +61,7 @@ module.exports = {
          },
 
          {
-            test: /\.sass$/,
+            test: /\.(sass|css)$/,
             use: [
                MiniCssExtractPlugin.loader,
                'css-loader',
@@ -57,9 +70,9 @@ module.exports = {
          },
 
          {
-           test: /\.js$/,
-           exclude: /node_modules/,
-           loader: "eslint-loader"
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: "eslint-loader"
          }
       ]
    }
