@@ -4,7 +4,6 @@
 ✔ add dev web server @done (2019-1-25 21:06:54)
 ✔ re-build project on save @done (2019-1-25 21:06:56)
 ✔ use Babel @done (2019-1-26 20:10:30)
-    ✔ exist on babeljs branch @done (2019-1-26 20:10:31)
 ✔ add js linter @done (2019-1-26 11:15:22)
 ✔ make development build @done (2019-1-27 15:40:47)
 ✔ make production build @done (2019-1-27 19:37:47)
