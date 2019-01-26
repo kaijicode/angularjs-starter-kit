@@ -3,7 +3,11 @@ import angular from "angular";
 
 angular
 .module('myApp')
-.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+.config(config);
+
+
+config.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+function config($stateProvider, $urlRouterProvider, $locationProvider) {
    $stateProvider
       .state({
          url: '/',
@@ -30,4 +34,4 @@ angular
 
       // get rid of hashbang (#!) in path. <base> has to be defined in index.html.
       $locationProvider.html5Mode(true);
-});
+}

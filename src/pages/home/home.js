@@ -3,14 +3,16 @@ import angularLogo from "../../logo-angularjs.png";
 import template from './home.html';
 
 
+class Home {
+   constructor() {
+      this.angularLogoUrl = angularLogo;
+   }
+}
+
 angular
 .module('myApp')
 .component('home', {
    template: template,
    controllerAs: 'home',
-   controller: function() {
-      const vm = this;
-
-      vm.angularLogoUrl = angularLogo;
-   }
+   controller: Home
 });
