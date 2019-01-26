@@ -15,7 +15,7 @@
     ✔ minification @done (2019-1-26 11:16:40)
     ✔ find solution for broken dependency injection after minification/uglifying @done (2019-1-26 11:16:42)
     ☐ test production build
-    ☐ minimize CSS
+    ✔ minimize CSS @done (2019-1-26 14:50:18)
 ☐ create deployment script
 ☐ add angular-resource as project dependency
     ☐ add example on how to use it
