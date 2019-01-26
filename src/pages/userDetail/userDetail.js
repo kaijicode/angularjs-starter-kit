@@ -1,5 +1,5 @@
-import angular from 'angular';
-import template from './userDetail.html';
+import angular from "angular";
+import template from "./userDetail.html";
 
 
 class UserDetail {
@@ -7,12 +7,12 @@ class UserDetail {
       this.id = $stateParams.userId;
    }
 }
-UserDetail.$inject = ['$stateParams'];
+UserDetail.$inject = ["$stateParams"];
 
 angular
-.module('myApp')
-.component('userDetail', {
-   template: template,
-   controllerAs: 'userDetail',
-   controller: UserDetail
-});
+   .module("myApp")
+   .component("userDetail", {
+      template: template,
+      controllerAs: "userDetail",
+      controller: UserDetail
+   });

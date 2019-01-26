@@ -33,10 +33,12 @@ module.exports = {
                'file-loader'
             ]
          },
+
          {
             test: /\.html$/,
             loader: 'raw-loader'
          },
+
          {
             test: /\.sass$/,
             use: [
@@ -44,6 +46,12 @@ module.exports = {
                'css-loader',
                'sass-loader'
             ]
+         },
+
+         {
+           test: /\.js$/,
+           exclude: /node_modules/,
+           loader: "eslint-loader"
          }
       ]
    }
