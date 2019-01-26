@@ -8,12 +8,14 @@
 ☐ make development build
 ☐ make production build
     ☐ create webpack.production.config.js
-    ☐ separate vendor (*.js, *.css) from source code
+    ✔ separate vendor (*.js, *.css) from source code @done (2019-1-26 12:58:48)
     ✔ application bundle (*.js and *.css) should contain hash of the file @done (2019-1-26 11:16:38)
     ☐ uglifying
+        ☐ webpack uses terser-webpack-plugin for minification which could be good enough?
     ✔ minification @done (2019-1-26 11:16:40)
     ✔ find solution for broken dependency injection after minification/uglifying @done (2019-1-26 11:16:42)
     ☐ test production build
+    ☐ minimize CSS
 ☐ create deployment script
 ☐ add angular-resource as project dependency
     ☐ add example on how to use it
