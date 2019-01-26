@@ -5,6 +5,7 @@
    },
    "devDependencies": {
       "angular-mocks": "^1.7.6",
+      "browser-sync": "^2.26.3",
       "clean-webpack-plugin": "^1.0.1",
       "css-loader": "^2.1.0",
       "eslint": "^5.12.1",
@@ -29,6 +30,7 @@
       "start": "webpack-dev-server --open",
       "build": "webpack --mode=production",
       "eslintfix": "eslint src/ --fix",
-      "test": "karma start"
+      "test": "karma start",
+      "browser-sync": "browser-sync start --server --serveStatic dist/"
    }
 }
