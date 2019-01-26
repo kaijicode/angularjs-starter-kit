@@ -1,26 +1,28 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 module.exports = {
    mode: 'development',
    entry: './src/index.js',
    output: {
-      path: path.resolve(__dirname, 'public'),
-      filename: 'app.bundle.js'
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'app.[contenthash].js'
    },
    devServer: {
-      contentBase: './public',
+      contentBase: './dist',
       historyApiFallback: true
    },
    plugins: [
+      new CleanWebpackPlugin(['dist/']),
       new HtmlWebpackPlugin({
          template: './src/index.html',
-         favicon: './public/favicon.ico'
+         favicon: './static/favicon.ico'
       }),
       new MiniCssExtractPlugin({
-         filename: '[chunkhash].css'
+         filename: 'app.[contenthash].css'
       })
    ],
    module: {

@@ -1,5 +1,5 @@
 import angular from 'angular';
-import angularLogo from "../../logo-angularjs.png";
+import angularLogo from "./logo-angularjs.png";
 import template from './home.html';
 
 
