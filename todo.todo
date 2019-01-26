@@ -3,7 +3,8 @@
 ✔ cache templates that are specified in templateUrl (app.component({templateUrl: 'some-template.html'}) @done (2019-1-25 21:06:53)
 ✔ add dev web server @done (2019-1-25 21:06:54)
 ✔ re-build project on save @done (2019-1-25 21:06:56)
-☐ use Babel
+✔ use Babel @done (2019-1-26 20:10:30)
+    ✔ exist on babeljs branch @done (2019-1-26 20:10:31)
 ✔ add js linter @done (2019-1-26 11:15:22)
 ☐ make development build
 ☐ make production build
@@ -20,7 +21,8 @@
 ☐ add angular-resource as project dependency
     ☐ add example on how to use it
 ☐ improve HTML boilerplate (add <meta> tags such as "viewport", "description")
-☐ setup test environment (Jasmine & Karma)
-    ☐ add example unit test
+✔ setup test environment (Jasmine & Karma) @done (2019-1-26 20:10:35)
+    ✔ add example unit test @done (2019-1-26 20:10:37)
 ☐ setup e2e test environment with protractor
-☐ add browsersync
+✔ add browsersync @done (2019-1-26 20:10:32)
+    ✔ exist on broweser-sync branch @done (2019-1-26 20:10:33)
