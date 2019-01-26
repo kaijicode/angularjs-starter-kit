@@ -20,7 +20,7 @@
 ☐ create deployment script
 ☐ add angular-resource as project dependency
     ☐ add example on how to use it
-☐ improve HTML boilerplate (add <meta> tags such as "viewport", "description")
+✔ improve HTML boilerplate (add <meta> tags such as "viewport", "description") @done (2019-1-26 21:40:36)
 ✔ setup test environment (Jasmine & Karma) @done (2019-1-26 20:10:35)
     ✔ add example unit test @done (2019-1-26 20:10:37)
 ☐ setup e2e test environment with protractor
