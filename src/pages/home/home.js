@@ -1,6 +1,7 @@
 import angular from "angular";
 import angularLogo from "./logo-angularjs.png";
 import template from "./home.html";
+import "../../components/loremIpsum/loremIpsum";
 
 
 class Home {
