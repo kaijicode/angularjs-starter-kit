@@ -27,5 +27,13 @@
             "always"
         ],
        "no-console": "off"
-    }
+    },
+   "globals": {
+      "angular": false,
+      "describe": false,
+      "beforeEach": false,
+      "it": false,
+      "expect": false,
+      "inject": false
+   }
 }
