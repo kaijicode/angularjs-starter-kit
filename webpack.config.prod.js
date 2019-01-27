@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -10,13 +11,14 @@ module.exports = {
    entry: './src/index.js',
    output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'app.[contenthash].js',
-      chunkFilename: 'lib.[contenthash].js'
+      filename: '[name].[contenthash].js'
    },
    optimization: {
+      runtimeChunk: 'single',
       splitChunks: {
          cacheGroups: {
-            commons: {
+            vendor: {
+               name: 'lib',
                test: /[\\/]node_modules[\\/]/,
                chunks: 'all',
                enforce: true
@@ -34,7 +36,8 @@ module.exports = {
          filename: 'app.[contenthash].css',
          chunkFilename: "lib.[contenthash].css"
       }),
-      new OptimizeCssAssetsPlugin()
+      new OptimizeCssAssetsPlugin(),
+      new webpack.HashedModuleIdsPlugin()
    ],
    module: {
       rules: [
