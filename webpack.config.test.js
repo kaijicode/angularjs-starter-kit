@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -15,6 +16,10 @@ module.exports = {
          template: './src/index.html',
          favicon: './static/favicon.ico'
       }),
+      new webpack.DefinePlugin({
+         API_BASE: JSON.stringify('https://'),
+         USER_API_BASE: JSON.stringify('https://randomuser.me/api/')
+      })
    ],
    module: {
       rules: [

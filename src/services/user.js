@@ -1,21 +1,24 @@
 import angular from "angular";
+import config from "../config";
 
 
 angular
    .module("myApp")
-   .factory("user", function () {
-      const users = [
-         {id: 1, name: "Alice"},
-         {id: 2, name: "Bob"}
-      ];
+   .factory("user", user);
 
-      function getUsers() {
-         return new Promise((resolve) => {
-            resolve(users);
+function user($resource) {
+   const userResource = $resource(config.USER_API_BASE);
+
+   function getUsers() {
+      return userResource.get().$promise
+         .then((response) => {
+            return response.results;
          });
-      }
+   }
 
-      return {
-         getUsers: getUsers
-      };
-   });
+   return {
+      getUsers: getUsers
+   };
+}
+
+user.$inject = ["$resource"];

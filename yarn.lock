@@ -249,6 +249,11 @@ angular-mocks@^1.7.6:
   resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.7.6.tgz#dc291a5311caa0b5b1aaf94a375084c27b477c47"
   integrity sha512-t3eQmuAZczdOVdOQj7muCBwH+MBNwd+/FaAsV1SNp+597EQVWABQwxI6KXE0k0ZlyJ5JbtkNIKU8kGAj1znxhw==
 
+angular-resource@^1.7.6:
+  version "1.7.6"
+  resolved "https://registry.yarnpkg.com/angular-resource/-/angular-resource-1.7.6.tgz#b6229fc14ef73e65fa6530659f027518db5b5a0f"
+  integrity sha512-mJKLH0sntVnxqDt6fBxqXRunGF3VqQncPdZ5fZupyZSbmwbvgbKfo3iHqCbyWYcYFIoj3xNZK7Pv6t0pa9/dMg==
+
 angular-ui-router@^1.0.20:
   version "1.0.20"
   resolved "https://registry.yarnpkg.com/angular-ui-router/-/angular-ui-router-1.0.20.tgz#86dbaaa3368df0c319f3328f4ace616a246cf394"

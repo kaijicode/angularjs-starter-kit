@@ -37,6 +37,10 @@ module.exports = {
          chunkFilename: "lib.[contenthash].css"
       }),
       new OptimizeCssAssetsPlugin(),
+      new webpack.DefinePlugin({
+         API_BASE: JSON.stringify('https://'),
+         USER_API_BASE: JSON.stringify('https://randomuser.me/api/')
+      }),
       new webpack.HashedModuleIdsPlugin()
    ],
    module: {
