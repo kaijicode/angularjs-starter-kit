@@ -7,7 +7,7 @@
     ✔ exist on babeljs branch @done (2019-1-26 20:10:31)
 ✔ add js linter @done (2019-1-26 11:15:22)
 ✔ make development build @done (2019-1-27 15:40:47)
-☐ make production build
+✔ make production build @done (2019-1-27 19:37:47)
     ✔ create webpack.production.config.js @done (2019-1-27 15:40:54)
     ✔ separate vendor (*.js, *.css) from source code @done (2019-1-26 12:58:48)
     ✔ application bundle (*.js and *.css) should contain hash of the file @done (2019-1-26 11:16:38)
@@ -15,14 +15,19 @@
         ✔ webpack uses terser-webpack-plugin for minification which could be good enough? @done (2019-1-27 15:41:00)
     ✔ minification @done (2019-1-26 11:16:40)
     ✔ find solution for broken dependency injection after minification/uglifying @done (2019-1-26 11:16:42)
-    ☐ test production build
+    ✔ test production build @done (2019-1-27 19:37:48)
     ✔ minimize CSS @done (2019-1-26 14:50:18)
-☐ create deployment script
-☐ add angular-resource as project dependency
-    ☐ add example on how to use it
+✘ create deployment script @cancelled (2019-1-27 19:17:28)
+✔ add angular-resource as project dependency @done (2019-1-27 19:17:05)
+    ✔ add example on how to use it @done (2019-1-27 19:17:06)
 ✔ improve HTML boilerplate (add <meta> tags such as "viewport", "description") @done (2019-1-26 21:40:36)
 ✔ setup test environment (Jasmine & Karma) @done (2019-1-26 20:10:35)
     ✔ add example unit test @done (2019-1-26 20:10:37)
-☐ setup e2e test environment with protractor
+✘ setup e2e test environment with protractor @cancelled (2019-1-27 19:17:11)
 ✔ add browsersync @done (2019-1-26 20:10:32)
     ✔ exist on broweser-sync branch @done (2019-1-26 20:10:33)
+☐ consider using "static get $inject() { return ["dependencyA"]; }" instead of ClassName.$inject = ["dependencyA"];
+☐ API's
+    ☐ https://randomuser.me/documentation#format
+    ☐ https://jsonplaceholder.typicode.com/
+☐ code organization
