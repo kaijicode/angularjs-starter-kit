@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 
 module.exports = {
@@ -10,24 +9,13 @@ module.exports = {
    entry: './src/index.js',
    output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'app.[contenthash].js',
-      chunkFilename: 'lib.[contenthash].js'
-   },
-   optimization: {
-      splitChunks: {
-         cacheGroups: {
-            commons: {
-               test: /[\\/]node_modules[\\/]/,
-               chunks: 'all',
-               enforce: true
-            }
-         }
-      }
+      filename: "app.js"
    },
    devServer: {
       contentBase: './dist',
       historyApiFallback: true
    },
+   devtool: 'inline-source-map',
    plugins: [
       new CleanWebpackPlugin(['dist/']),
       new HtmlWebpackPlugin({
@@ -35,10 +23,8 @@ module.exports = {
          favicon: './static/favicon.ico'
       }),
       new MiniCssExtractPlugin({
-         filename: 'app.[contenthash].css',
-         chunkFilename: "lib.[contenthash].css"
-      }),
-      new OptimizeCssAssetsPlugin()
+         filename: "app.css"
+      })
    ],
    module: {
       rules: [
@@ -48,7 +34,6 @@ module.exports = {
                'file-loader'
             ]
          },
-
 
          {
             test: /\.(woff|woff2|eot|ttf|otf)$/,

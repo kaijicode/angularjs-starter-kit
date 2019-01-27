@@ -6,13 +6,13 @@
 ✔ use Babel @done (2019-1-26 20:10:30)
     ✔ exist on babeljs branch @done (2019-1-26 20:10:31)
 ✔ add js linter @done (2019-1-26 11:15:22)
-☐ make development build
+✔ make development build @done (2019-1-27 15:40:47)
 ☐ make production build
-    ☐ create webpack.production.config.js
+    ✔ create webpack.production.config.js @done (2019-1-27 15:40:54)
     ✔ separate vendor (*.js, *.css) from source code @done (2019-1-26 12:58:48)
     ✔ application bundle (*.js and *.css) should contain hash of the file @done (2019-1-26 11:16:38)
-    ☐ uglifying
-        ☐ webpack uses terser-webpack-plugin for minification which could be good enough?
+    ✔ uglifying @done (2019-1-27 15:40:59)
+        ✔ webpack uses terser-webpack-plugin for minification which could be good enough? @done (2019-1-27 15:41:00)
     ✔ minification @done (2019-1-26 11:16:40)
     ✔ find solution for broken dependency injection after minification/uglifying @done (2019-1-26 11:16:42)
     ☐ test production build
