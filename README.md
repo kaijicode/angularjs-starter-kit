@@ -10,15 +10,15 @@ angularjs-starter-kit comes with:
 * angular-resource
 
 ### start the development environment  
-`npm start`  
+`yarn start`  
   
 ### make production build
-`npm run build`  
+`yarn build`  
   
 ### fix ESLint warnings  
-`npm run eslintfix`
+`yarn eslintfix`
 
 ### run unit tests
-`npm run test`
+`yarn test`
 
 files should be named as `*.test.js`
