@@ -21,8 +21,8 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       })
       .state({
          url: "/users/{userId}",
-         name: "user-detail",
-         component: "userDetail"
+         name: "user-profile",
+         component: "userProfile"
       })
       .state({
          url: "/404",

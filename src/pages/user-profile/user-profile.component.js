@@ -1,18 +1,21 @@
 import angular from "angular";
-import template from "./userDetail.html";
+import template from "./user-profile.html";
 
 
-class UserDetail {
+class UserProfile {
+   static get $inject() {
+      return ["$stateParams"];
+   }
+
    constructor($stateParams) {
       this.id = $stateParams.userId;
    }
 }
-UserDetail.$inject = ["$stateParams"];
 
 angular
    .module("myApp")
-   .component("userDetail", {
+   .component("userProfile", {
       template: template,
       controllerAs: "userDetail",
-      controller: UserDetail
+      controller: UserProfile
    });

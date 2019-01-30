@@ -1,9 +1,13 @@
 import angular from "angular";
-import template from "./userList.html";
-import "./userList.sass";
+import template from "./user-list.html";
+import "./user-list.sass";
 
 
 class UserList {
+   static get $inject() {
+      return ["user"];
+   }
+
    constructor(user) {
       this.user = user;
       this.users = [];
@@ -18,9 +22,6 @@ class UserList {
          .catch(console.error);
    }
 }
-
-UserList.$inject = ["user"];
-
 
 angular
    .module("myApp")

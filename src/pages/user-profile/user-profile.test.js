@@ -1,4 +1,4 @@
-describe("userDetails", () => {
+describe("userProfile", () => {
    beforeEach(angular.mock.module("myApp"));
 
    let $componentController;
@@ -13,7 +13,7 @@ describe("userDetails", () => {
          }
       };
 
-      const ctrl = $componentController("userDetail", locals);
+      const ctrl = $componentController("userProfile", locals);
 
       expect(ctrl.id).toBe(1);
    });

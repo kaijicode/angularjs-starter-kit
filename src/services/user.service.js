@@ -4,9 +4,9 @@ import config from "../config";
 
 angular
    .module("myApp")
-   .factory("user", user);
+   .factory("user", userService);
 
-function user($resource) {
+function userService($resource) {
    const userResource = $resource(config.USER_API_BASE);
 
    function getUsers() {
@@ -21,4 +21,4 @@ function user($resource) {
    };
 }
 
-user.$inject = ["$resource"];
+userService.$inject = ["$resource"];

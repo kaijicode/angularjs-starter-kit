@@ -26,8 +26,6 @@
 ✘ setup e2e test environment with protractor @cancelled (2019-1-27 19:17:11)
 ✔ add browsersync @done (2019-1-26 20:10:32)
     ✔ exist on broweser-sync branch @done (2019-1-26 20:10:33)
-☐ consider using "static get $inject() { return ["dependencyA"]; }" instead of ClassName.$inject = ["dependencyA"];
-☐ API's
-    ☐ https://randomuser.me/documentation#format
-    ☐ https://jsonplaceholder.typicode.com/
-☐ code organization
+✔ consider using "static get $inject() { return ["dependencyA"]; }" instead of ClassName.$inject = ["dependencyA"]; @done (2019-1-30 18:24:05)
+✔ code organization @done (2019-1-30 18:24:06)
+☐ tests should not be part of the final build

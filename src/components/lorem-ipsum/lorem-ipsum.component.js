@@ -1,6 +1,6 @@
 import angular from "angular";
-import template from "./loremIpsum.html";
-import "./loremIpsum.sass";
+import template from "./lorem-ipsum.html";
+import "./lorem-ipsum.sass";
 
 
 angular

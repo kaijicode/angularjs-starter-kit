@@ -1,5 +1,5 @@
 import angular from "angular";
-import template from "./notFound404.html";
+import template from "./not-found-404.html";
 
 
 angular
