@@ -9,16 +9,16 @@ angularjs-starter-kit comes with:
 * angular-ui-router
 * angular-resource
 
-#### start the development environment  
+### start the development environment  
 `npm start`  
   
-#### make production build
+### make production build
 `npm run build`  
   
-#### fix ESLint warnings  
+### fix ESLint warnings  
 `npm run eslintfix`
 
-#### run unit tests
+### run unit tests
 `npm run test`
 
 files should be named as `*.test.js`
