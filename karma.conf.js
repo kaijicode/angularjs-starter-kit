@@ -13,8 +13,7 @@ module.exports = (config) => {
       frameworks: ['jasmine'],
 
       files: [
-         {pattern: "src/setup.test.js", watched: false},
-         {pattern: 'src/**/*.test.js'}
+         {pattern: "src/setup.test.js", watched: false}
       ],
 
       // list of files / patterns to exclude
