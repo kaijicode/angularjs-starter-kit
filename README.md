@@ -1,4 +1,5 @@
 # angularjs-starter-kit
+
 angularjs-starter-kit comes with:
 
 * AngularJS 1.7.6
@@ -8,6 +9,7 @@ angularjs-starter-kit comes with:
 * ESLint
 * angular-ui-router
 * angular-resource
+* css autoprefixer (using PostCSS)
 
 ### start the development environment  
 `yarn start`  
