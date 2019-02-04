@@ -31,5 +31,5 @@
 ✘ tests should not be part of the final build @cancelled (2019-1-30 19:02:30)
     ✔ they are not part of the production build as long as they are not mistakenly imported (setup.test.js not counts) @done (2019-1-30 19:02:33)
 ☐ add license
-☐ write brief explanation what this is all about
-☐ add css autoprefixer
+✔ write brief explanation what this is all about @done (2019-2-4 14:43:13)
+✔ add css autoprefixer @done (2019-2-4 14:43:14)

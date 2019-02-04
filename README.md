@@ -1,26 +1,28 @@
 # angularjs-starter-kit
 
-angularjs-starter-kit comes with:
+Starter kit for developing web applications with Angular 1.7.6.
 
+## What's in a box?
 * AngularJS 1.7.6
 * Webpack 4
 * Sass
 * Karma
+* Jasmine
 * ESLint
 * angular-ui-router
 * angular-resource
-* css autoprefixer (using PostCSS)
+* css autoprefixer (with PostCSS)
 
-### start the development environment  
+## Commands
+### Start the development server  
 `yarn start`  
   
-### make production build
+### Make production build
 `yarn build`  
   
-### fix ESLint warnings  
+### Fix ESLint warnings  
 `yarn eslintfix`
 
-### run unit tests
+### Run unit tests
 `yarn test`
-
-files should be named as `*.test.js`
+> Karma will look after files which match the `*.test.js` pattern in `src/` directory
