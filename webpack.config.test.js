@@ -1,24 +1,24 @@
-const webpack = require('webpack');
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 
 module.exports = {
-   mode: 'none',
+   mode: "none",
    output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'app.[contenthash].js'
+      path: path.resolve(__dirname, "dist"),
+      filename: "app.[contenthash].js"
    },
    plugins: [
-      new CleanWebpackPlugin(['dist/']),
+      new CleanWebpackPlugin(["dist/"]),
       new HtmlWebpackPlugin({
-         template: './src/index.html',
-         favicon: './static/favicon.ico'
+         template: "./src/index.html",
+         favicon: "./static/favicon.ico"
       }),
       new webpack.DefinePlugin({
-         API_BASE: JSON.stringify('https://'),
-         USER_API_BASE: JSON.stringify('https://randomuser.me/api/')
+         API_BASE: JSON.stringify("https://"),
+         USER_API_BASE: JSON.stringify("https://randomuser.me/api/")
       })
    ],
    module: {
@@ -26,36 +26,36 @@ module.exports = {
          {
             test: /\.(png|svg|jpg|gif)$/,
             use: [
-               'file-loader'
+               "file-loader"
             ]
          },
 
          {
             test: /\.(woff|woff2|eot|ttf|otf)$/,
             use: [
-               'file-loader'
+               "file-loader"
             ]
          },
 
          {
             test: /\.html$/,
-            loader: 'raw-loader'
+            loader: "raw-loader"
          },
 
          {
             test: /\.(sass|css)$/,
             use: [
-               'css-loader',
+               "css-loader",
                {
-                  loader: 'postcss-loader',
+                  loader: "postcss-loader",
                   options: {
-                    ident: 'postcss',
-                    plugins: [
-                      require('autoprefixer')(),
-                    ]
+                     ident: "postcss",
+                     plugins: [
+                        require("autoprefixer")(),
+                     ]
                   }
-                },
-               'sass-loader'
+               },
+               "sass-loader"
             ]
          },
 

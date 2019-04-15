@@ -1,16 +1,16 @@
-const webpackTestConfig = require('./webpack.config.test');
+const webpackTestConfig = require("./webpack.config.test");
 
 
 module.exports = (config) => {
    config.set({
 
       // base path that will be used to resolve all patterns (eg. files, exclude)
-      basePath: '',
+      basePath: "",
 
 
       // frameworks to use
       // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-      frameworks: ['jasmine'],
+      frameworks: ["jasmine"],
 
       files: [
          {pattern: "src/setup.test.js", watched: false}
@@ -20,14 +20,14 @@ module.exports = (config) => {
       exclude: [],
 
       preprocessors: {
-         "src/setup.test.js": ['webpack'],
-         'src/**/*.test.js': ['webpack']
+         "src/setup.test.js": ["webpack"],
+         "src/**/*.test.js": ["webpack"]
       },
 
       // test results reporter to use
       // possible values: 'dots', 'progress'
       // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-      reporters: ['progress'],
+      reporters: ["progress"],
 
 
       // web server port
@@ -49,7 +49,7 @@ module.exports = (config) => {
 
       // start these browsers
       // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-      browsers: ['Chrome'],
+      browsers: ["Chrome"],
 
 
       // Continuous Integration mode
@@ -70,7 +70,7 @@ module.exports = (config) => {
       // webpack-dev-middleware configuration
       // i. e.
       webpackMiddleware: {
-         stats: 'errors-only'
+         stats: "errors-only"
       }
-   })
+   });
 };
