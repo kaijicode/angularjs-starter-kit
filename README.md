@@ -1,9 +1,9 @@
 # angularjs-starter-kit
 
-Starter kit for developing web applications with Angular 1.7.6.
+Starter kit for developing web applications with Angular 1.7.8.
 
 ## What's in a box?
-* AngularJS 1.7.6
+* AngularJS 1.7.8
 * Webpack 4
 * Sass
 * Karma
