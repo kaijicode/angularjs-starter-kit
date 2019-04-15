@@ -4,10 +4,6 @@ import "./user-list.sass";
 
 
 class UserList {
-   static get $inject() {
-      return ["user"];
-   }
-
    constructor(user) {
       this.user = user;
       this.users = [];

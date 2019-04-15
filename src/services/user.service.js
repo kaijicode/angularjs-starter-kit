@@ -20,5 +20,3 @@ function userService($resource) {
       getUsers: getUsers
    };
 }
-
-userService.$inject = ["$resource"];
